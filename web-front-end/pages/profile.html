@@ -44,7 +44,7 @@
             const username = document.getElementById('username').value;
             const contact_number = document.getElementById('contact_number').value;
             const email = document.getElementById('email').value;
-            const response = await fetch('https://4001-sridurgeshv-authenticat-pnlks39vo0y.ws-us115.gitpod.io/auth/user', {
+            const response = await fetch('http://127.0.0.1:4001/auth/user', {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ username, email, contact_number }),
